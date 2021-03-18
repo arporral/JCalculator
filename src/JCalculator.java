@@ -11,7 +11,7 @@ import java.math.RoundingMode;
  *
  * @author clodomiro
  */
-public class calculadora extends javax.swing.JFrame {
+public class JCalculator extends javax.swing.JFrame {
 
     BigDecimal memoria1 = BigDecimal.ZERO;
     String signo = "";
@@ -20,7 +20,7 @@ public class calculadora extends javax.swing.JFrame {
     /**
      * Creates new form calculadora
      */
-    public calculadora() {
+    public JCalculator() {
         initComponents();
     }
 
@@ -530,20 +530,22 @@ public class calculadora extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JCalculator.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JCalculator.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JCalculator.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JCalculator.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
-                new calculadora().setVisible(true);
+                new JCalculator().setVisible(true);
             }
         });
     }
